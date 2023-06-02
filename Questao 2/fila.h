@@ -1,9 +1,5 @@
 //Questão 2 - b
-struct Node {
-    int conteudo;
-    struct Node *prox;
-};
-typedef struct Node node;
+#include "node.h"
 
 int vazia(node *FILA) {
     if (FILA->prox == NULL)
