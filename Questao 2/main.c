@@ -18,12 +18,12 @@ int main() {
     int opcao;
 
     do {
-        printf("Escolha uma opção:\n");
+        printf("Escolha uma opcao:\n");
         printf("(1) Pilha\n");
         printf("(2) Fila\n");
         printf("(3) Arvore\n");
         printf("(0) Sair\n");
-        printf("Opção: ");
+        printf("Opcao: ");
         scanf("%d", &opcao);
 
         switch (opcao) {
@@ -61,7 +61,7 @@ int main() {
                             printf("Voltando ao Menu Principal...\n");
                             break;
                         default:
-                            printf("Opção invalida!\n");
+                            printf("Opcao invalida!\n");
                     }
 
                     printf("\n");
@@ -122,7 +122,7 @@ int main() {
                     printf("\n--- Operações na Arvore ---\n");
                     printf("(1) Inserir Elemento\n");
                     printf("(2) Remover Elemento\n");
-                    printf("(3) Imprimir Árvore\n");
+                    printf("(3) Imprimir Arvore\n");
                     printf("(4) Buscar Elemento\n");
                     printf("(5) Imprimir Ordenado Direita -> Raiz -> Esquerda\n");
                     printf("(6) Maior Elemento\n");
@@ -171,7 +171,7 @@ int main() {
                             printf("Voltando ao Menu Principal...\n");
                             break;
                         default:
-                            printf("Opção invalida!\n");
+                            printf("Opcao invalida!\n");
                     }
 
                     printf("\n");
