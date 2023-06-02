@@ -1,7 +1,7 @@
 //Questão 2 - b
 #include "node.h"
 
-int vazia(node *FILA) {
+int vazia1(node *FILA) {
     if (FILA->prox == NULL)
         return 1;
     else
