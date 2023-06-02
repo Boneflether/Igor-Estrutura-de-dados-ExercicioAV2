@@ -1,12 +1,5 @@
 //Questão 2 - a
-#include <stdio.h>
-#include <stdlib.h>
-
-struct Node {
-    int item;
-    struct Node *prox;
-};
-typedef struct Node node;
+#include "node.h"
 
 int vazia(node *PILHA) {
     if (PILHA->prox == NULL)
