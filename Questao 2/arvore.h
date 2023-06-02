@@ -1,3 +1,4 @@
+//Questão 2 - c
 typedef struct no {
     int chave;
     struct no *esquerda, *direita;
@@ -64,6 +65,7 @@ No *remover(No *raiz, int item) {
     return raiz;
 }
 
+// i.
 No *buscarElemento(No *raiz, int chave) {
     if (raiz == NULL || raiz->chave == chave) {
         return raiz;
@@ -74,6 +76,7 @@ No *buscarElemento(No *raiz, int chave) {
     return buscarElemento(raiz->esquerda, chave);
 }
 
+// ii.
 void imprimirOrdenado(No *raiz) {
     if (raiz != NULL) {
         imprimirOrdenado(raiz->direita);
@@ -82,6 +85,7 @@ void imprimirOrdenado(No *raiz) {
     }
 }
 
+//iii.
 int maiorElemento(No *raiz) {
     if (raiz->direita == NULL) {
         return raiz->chave;
