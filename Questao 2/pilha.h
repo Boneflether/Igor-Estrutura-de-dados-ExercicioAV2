@@ -13,7 +13,7 @@ void empilha(node *PILHA) {
     novo->prox = NULL;
 
     printf("Digite o novo item: ");
-    scanf("%d", &novo->item);
+    scanf("%d", &novo->conteudo);
 
     if (vazia(PILHA))
         PILHA->prox = novo;
@@ -35,7 +35,7 @@ void imprimePilha(node *PILHA) {
     tmp = PILHA->prox;
     printf("PILHA:");
     while (tmp != NULL) {
-        printf("%3d ", tmp->item);
+        printf("%3d ", tmp->conteudo);
         tmp = tmp->prox;
     }
     printf("\n");
@@ -50,7 +50,7 @@ void imprimeTopo(node *PILHA) {
     tmp = PILHA->prox;
     while (tmp != NULL) {
         if (tmp->prox == NULL) {
-            printf("topo: %3d\n", tmp->item);
+            printf("topo: %3d\n", tmp->conteudo);
         }
         tmp = tmp->prox;
         
